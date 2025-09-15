@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8" >
+    <meta name="viewport" content="width=device-width,initial-scale="1.0">
+    <title> CLI Note Taking App</title>
+    <link rel="stylesheet" href="design.css">
+</head>    
+
+    <body>
+   <header>
+
+    <h1>🌿 My Notes 🌿</h1>
+    <p> Welcome to Notes, Please share something!💮</p>
+   </header>
+
+   <main>
+    <section id="note-form-section">
+        <h2>Add a NEW Note⬇️</h2>
+    <form id="note-form">
+
+     <div>
+     <label for="title">✦ Title ✦</label>
+     <input type="text" id="title" name="title" placeholder="Enter your title.." required><br><br>
+     </div>
+
+     <div>
+     <label for="content" >✦ Content ✦</label><br>
+     <textarea id="content" name="content" rows="5" cols="50" placeholder="Type your note.. "required 
+     maxlength="1000" ></textarea>
+    </div>
+
+     <button type="submit">Save note</button>
+    </form>
+
+</section>
+
+<section id="search">
+    <h2>Search your notes🔎</h2>
+    <form method="GET" action="/search">
+       <input type="text" id="search" name="query" placeholder="Search by title"> 
+       <button type="submit">Search</button>
+    </form>
+</section>
+
+<section id="notes-list">
+    <h2>Saved Notes</h2>
+    
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+<footer>
+    <p>My notes app ¦ created by Shreya. 💕🧸</p>
+</footer>
+    </body>
+
+</html>
